@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante - Sistema de Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurante El Buen Sabor</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menú del Día</h2>
+            <div class="menu-item">
+                <h3>Pasta Alfredo</h3>
+                <p>Deliciosa pasta con salsa Alfredo cremosa.</p>
+                <button class="order-btn" onclick="agregarPedido('Pasta Alfredo')">Agregar al Pedido</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Ensalada César</h3>
+                <p>Ensalada fresca con aderezo César.</p>
+                <button class="order-btn" onclick="agregarPedido('Ensalada César')">Agregar al Pedido</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Pizza Margherita</h3>
+                <p>Pizza clásica con tomate, mozzarella y albahaca.</p>
+                <button class="order-btn" onclick="agregarPedido('Pizza Margherita')">Agregar al Pedido</button>
+            </div>
+        </section>
+
+        <section id="pedido">
+            <h2>Tu Pedido</h2>
+            <ul id="pedido-lista">
+                <!-- Los pedidos se mostrarán aquí -->
+            </ul>
+            <button id="confirmar-btn" onclick="confirmarPedido()">Confirmar Pedido</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurante El Buen Sabor. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
